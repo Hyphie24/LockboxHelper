@@ -1,7 +1,8 @@
 ## Interface: 90100
 ## Title: LockboxHelper
 ## Version: 1.1.0 Retail
-## Author: Hyphie
+## Original Author: Pyranthos@Dath'Remar
+## Fan Fix: Hyphie
 ## Dependencies: 
 ## LoadOnDemand: 0
 ## SavedVariables: LockboxHelperGlobalData

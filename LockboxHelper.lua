@@ -1,4 +1,4 @@
-﻿local addonName = ...
+local addonName = ...
 
 
 LockboxHelper = CreateFrame("Frame")
@@ -80,7 +80,7 @@ if(not s.UI.UnlockButton.setupComplete)then
 s.UI.UnlockButton:SetWidth(32)
 s.UI.UnlockButton:SetHeight(32)
 s.UI.UnlockButton:SetPoint("TOPLEFT",8,-24)
-s.UI.UnlockButton.icon:SetTexture("Interface/Icons/Spell_Nature_MoonKey")
+s.UI.UnlockButton.icon:SetTexture("Interface/Icons/Spell_nature_moonkey")
 s.UI.UnlockButton:SetScript("OnEnter",s.ShowTooltip)
 s.UI.UnlockButton:SetScript("OnLeave",s.HideTooltip)
 s.UI.UnlockButton.setupComplete = true
@@ -92,7 +92,7 @@ if(not s.UI.OpenButton.setupComplete)then
 s.UI.OpenButton:SetWidth(32)
 s.UI.OpenButton:SetHeight(32)
 s.UI.OpenButton:SetPoint("TOPLEFT",s.UI.UnlockButton,"TOPRIGHT",8,0)
-s.UI.OpenButton.icon:SetTexture("Interface/Icons/achievement_guildperk_mobilebanking")
+s.UI.OpenButton.icon:SetTexture("Interface/Icons/Inv_misc_ornatebox")
 s.UI.OpenButton:SetScript("OnEnter",s.ShowTooltip)
 s.UI.OpenButton:SetScript("OnLeave",s.HideTooltip)
 s.UI.OpenButton.setupComplete = true
@@ -108,7 +108,7 @@ local itemLink = GetContainerItemLink(bag, slot)
 if(itemLink)then
 s.TTScanner = s.TTScanner or CreateFrame( "GameTooltip","LockBoxHelperTTScanner"..random(1,50000) , UIParent, "GameTooltipTemplate");
 s.TTScanner:SetOwner( WorldFrame, "ANCHOR_NONE" );
-s.TTScanner:SetHyperlink("quest:1");
+s.TTScanner:SetHyperlink("item:1");
 s.TTScanner:SetBagItem(bag, slot)
 if ( s.TTScanner:IsShown() ) then
 for i = 1,s.TTScanner:NumLines() do
